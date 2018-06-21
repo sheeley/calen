@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C29EBACB20DBEF33002C0EEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29EBACA20DBEF33002C0EEA /* AppDelegate.swift */; };
+		C29EBACD20DBEF33002C0EEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29EBACC20DBEF33002C0EEA /* ViewController.swift */; };
+		C29EBAD020DBEF33002C0EEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C29EBACE20DBEF33002C0EEA /* Main.storyboard */; };
+		C29EBAD220DBEF33002C0EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C29EBAD120DBEF33002C0EEA /* Assets.xcassets */; };
+		C29EBAD520DBEF33002C0EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C29EBAD320DBEF33002C0EEA /* LaunchScreen.storyboard */; };
+		C29EBADA20DBEF33002C0EEA /* calendurr WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C29EBAD920DBEF33002C0EEA /* calendurr WatchKit App.app */; };
+		C29EBAE020DBEF33002C0EEA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C29EBADE20DBEF33002C0EEA /* Interface.storyboard */; };
+		C29EBAE220DBEF33002C0EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C29EBAE120DBEF33002C0EEA /* Assets.xcassets */; };
+		C29EBAE920DBEF33002C0EEA /* calendurr WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C29EBAE820DBEF33002C0EEA /* calendurr WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C29EBAEE20DBEF33002C0EEA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29EBAED20DBEF33002C0EEA /* InterfaceController.swift */; };
+		C29EBAF020DBEF33002C0EEA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29EBAEF20DBEF33002C0EEA /* ExtensionDelegate.swift */; };
+		C29EBAF220DBEF33002C0EEA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29EBAF120DBEF33002C0EEA /* NotificationController.swift */; };
+		C29EBAF420DBEF33002C0EEA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29EBAF320DBEF33002C0EEA /* ComplicationController.swift */; };
+		C29EBAF620DBEF33002C0EEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C29EBAF520DBEF33002C0EEA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C29EBADB20DBEF33002C0EEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29EBABF20DBEF33002C0EEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C29EBAD820DBEF33002C0EEA;
+			remoteInfo = "calendurr WatchKit App";
+		};
+		C29EBAEA20DBEF33002C0EEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29EBABF20DBEF33002C0EEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C29EBAE720DBEF33002C0EEA;
+			remoteInfo = "calendurr WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C29EBAFE20DBEF33002C0EEA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C29EBAE920DBEF33002C0EEA /* calendurr WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C29EBB0220DBEF33002C0EEA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C29EBADA20DBEF33002C0EEA /* calendurr WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C29EBAC720DBEF33002C0EEA /* calendurr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calendurr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C29EBACA20DBEF33002C0EEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C29EBACC20DBEF33002C0EEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C29EBACF20DBEF33002C0EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C29EBAD120DBEF33002C0EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C29EBAD420DBEF33002C0EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C29EBAD620DBEF33002C0EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C29EBAD920DBEF33002C0EEA /* calendurr WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "calendurr WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C29EBADF20DBEF33002C0EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C29EBAE120DBEF33002C0EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C29EBAE320DBEF33002C0EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C29EBAE820DBEF33002C0EEA /* calendurr WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "calendurr WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C29EBAED20DBEF33002C0EEA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C29EBAEF20DBEF33002C0EEA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C29EBAF120DBEF33002C0EEA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C29EBAF320DBEF33002C0EEA /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C29EBAF520DBEF33002C0EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C29EBAF720DBEF33002C0EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C29EBAF820DBEF33002C0EEA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C29EBAC420DBEF33002C0EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C29EBAE520DBEF33002C0EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C29EBABE20DBEF33002C0EEA = {
+			isa = PBXGroup;
+			children = (
+				C29EBAC920DBEF33002C0EEA /* calendurr */,
+				C29EBADD20DBEF33002C0EEA /* calendurr WatchKit App */,
+				C29EBAEC20DBEF33002C0EEA /* calendurr WatchKit Extension */,
+				C29EBAC820DBEF33002C0EEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C29EBAC820DBEF33002C0EEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C29EBAC720DBEF33002C0EEA /* calendurr.app */,
+				C29EBAD920DBEF33002C0EEA /* calendurr WatchKit App.app */,
+				C29EBAE820DBEF33002C0EEA /* calendurr WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C29EBAC920DBEF33002C0EEA /* calendurr */ = {
+			isa = PBXGroup;
+			children = (
+				C29EBACA20DBEF33002C0EEA /* AppDelegate.swift */,
+				C29EBACC20DBEF33002C0EEA /* ViewController.swift */,
+				C29EBACE20DBEF33002C0EEA /* Main.storyboard */,
+				C29EBAD120DBEF33002C0EEA /* Assets.xcassets */,
+				C29EBAD320DBEF33002C0EEA /* LaunchScreen.storyboard */,
+				C29EBAD620DBEF33002C0EEA /* Info.plist */,
+			);
+			path = calendurr;
+			sourceTree = "<group>";
+		};
+		C29EBADD20DBEF33002C0EEA /* calendurr WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C29EBADE20DBEF33002C0EEA /* Interface.storyboard */,
+				C29EBAE120DBEF33002C0EEA /* Assets.xcassets */,
+				C29EBAE320DBEF33002C0EEA /* Info.plist */,
+			);
+			path = "calendurr WatchKit App";
+			sourceTree = "<group>";
+		};
+		C29EBAEC20DBEF33002C0EEA /* calendurr WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C29EBAED20DBEF33002C0EEA /* InterfaceController.swift */,
+				C29EBAEF20DBEF33002C0EEA /* ExtensionDelegate.swift */,
+				C29EBAF120DBEF33002C0EEA /* NotificationController.swift */,
+				C29EBAF320DBEF33002C0EEA /* ComplicationController.swift */,
+				C29EBAF520DBEF33002C0EEA /* Assets.xcassets */,
+				C29EBAF720DBEF33002C0EEA /* Info.plist */,
+				C29EBAF820DBEF33002C0EEA /* PushNotificationPayload.apns */,
+			);
+			path = "calendurr WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C29EBAC620DBEF33002C0EEA /* calendurr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C29EBB0320DBEF33002C0EEA /* Build configuration list for PBXNativeTarget "calendurr" */;
+			buildPhases = (
+				C29EBAC320DBEF33002C0EEA /* Sources */,
+				C29EBAC420DBEF33002C0EEA /* Frameworks */,
+				C29EBAC520DBEF33002C0EEA /* Resources */,
+				C29EBB0220DBEF33002C0EEA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C29EBADC20DBEF33002C0EEA /* PBXTargetDependency */,
+			);
+			name = calendurr;
+			productName = calendurr;
+			productReference = C29EBAC720DBEF33002C0EEA /* calendurr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C29EBAD820DBEF33002C0EEA /* calendurr WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C29EBAFF20DBEF33002C0EEA /* Build configuration list for PBXNativeTarget "calendurr WatchKit App" */;
+			buildPhases = (
+				C29EBAD720DBEF33002C0EEA /* Resources */,
+				C29EBAFE20DBEF33002C0EEA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C29EBAEB20DBEF33002C0EEA /* PBXTargetDependency */,
+			);
+			name = "calendurr WatchKit App";
+			productName = "calendurr WatchKit App";
+			productReference = C29EBAD920DBEF33002C0EEA /* calendurr WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C29EBAE720DBEF33002C0EEA /* calendurr WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C29EBAFB20DBEF33002C0EEA /* Build configuration list for PBXNativeTarget "calendurr WatchKit Extension" */;
+			buildPhases = (
+				C29EBAE420DBEF33002C0EEA /* Sources */,
+				C29EBAE520DBEF33002C0EEA /* Frameworks */,
+				C29EBAE620DBEF33002C0EEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "calendurr WatchKit Extension";
+			productName = "calendurr WatchKit Extension";
+			productReference = C29EBAE820DBEF33002C0EEA /* calendurr WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C29EBABF20DBEF33002C0EEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Johnny Sheeley";
+				TargetAttributes = {
+					C29EBAC620DBEF33002C0EEA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C29EBAD820DBEF33002C0EEA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C29EBAE720DBEF33002C0EEA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C29EBAC220DBEF33002C0EEA /* Build configuration list for PBXProject "calendurr" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C29EBABE20DBEF33002C0EEA;
+			productRefGroup = C29EBAC820DBEF33002C0EEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C29EBAC620DBEF33002C0EEA /* calendurr */,
+				C29EBAD820DBEF33002C0EEA /* calendurr WatchKit App */,
+				C29EBAE720DBEF33002C0EEA /* calendurr WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C29EBAC520DBEF33002C0EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C29EBAD520DBEF33002C0EEA /* LaunchScreen.storyboard in Resources */,
+				C29EBAD220DBEF33002C0EEA /* Assets.xcassets in Resources */,
+				C29EBAD020DBEF33002C0EEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C29EBAD720DBEF33002C0EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C29EBAE220DBEF33002C0EEA /* Assets.xcassets in Resources */,
+				C29EBAE020DBEF33002C0EEA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C29EBAE620DBEF33002C0EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C29EBAF620DBEF33002C0EEA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C29EBAC320DBEF33002C0EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C29EBACD20DBEF33002C0EEA /* ViewController.swift in Sources */,
+				C29EBACB20DBEF33002C0EEA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C29EBAE420DBEF33002C0EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C29EBAF220DBEF33002C0EEA /* NotificationController.swift in Sources */,
+				C29EBAF420DBEF33002C0EEA /* ComplicationController.swift in Sources */,
+				C29EBAF020DBEF33002C0EEA /* ExtensionDelegate.swift in Sources */,
+				C29EBAEE20DBEF33002C0EEA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C29EBADC20DBEF33002C0EEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C29EBAD820DBEF33002C0EEA /* calendurr WatchKit App */;
+			targetProxy = C29EBADB20DBEF33002C0EEA /* PBXContainerItemProxy */;
+		};
+		C29EBAEB20DBEF33002C0EEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C29EBAE720DBEF33002C0EEA /* calendurr WatchKit Extension */;
+			targetProxy = C29EBAEA20DBEF33002C0EEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C29EBACE20DBEF33002C0EEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C29EBACF20DBEF33002C0EEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C29EBAD320DBEF33002C0EEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C29EBAD420DBEF33002C0EEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C29EBADE20DBEF33002C0EEA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C29EBADF20DBEF33002C0EEA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C29EBAF920DBEF33002C0EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C29EBAFA20DBEF33002C0EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C29EBAFC20DBEF33002C0EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "calendurr WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aigee.calendurr.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		C29EBAFD20DBEF33002C0EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "calendurr WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aigee.calendurr.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		C29EBB0020DBEF33002C0EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = calendurr_WatchKit_Extension;
+				INFOPLIST_FILE = "calendurr WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = aigee.calendurr.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		C29EBB0120DBEF33002C0EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = calendurr_WatchKit_Extension;
+				INFOPLIST_FILE = "calendurr WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = aigee.calendurr.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		C29EBB0420DBEF33002C0EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = calendurr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aigee.calendurr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C29EBB0520DBEF33002C0EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = calendurr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aigee.calendurr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C29EBAC220DBEF33002C0EEA /* Build configuration list for PBXProject "calendurr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C29EBAF920DBEF33002C0EEA /* Debug */,
+				C29EBAFA20DBEF33002C0EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C29EBAFB20DBEF33002C0EEA /* Build configuration list for PBXNativeTarget "calendurr WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C29EBAFC20DBEF33002C0EEA /* Debug */,
+				C29EBAFD20DBEF33002C0EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C29EBAFF20DBEF33002C0EEA /* Build configuration list for PBXNativeTarget "calendurr WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C29EBB0020DBEF33002C0EEA /* Debug */,
+				C29EBB0120DBEF33002C0EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C29EBB0320DBEF33002C0EEA /* Build configuration list for PBXNativeTarget "calendurr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C29EBB0420DBEF33002C0EEA /* Debug */,
+				C29EBB0520DBEF33002C0EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C29EBABF20DBEF33002C0EEA /* Project object */;
+}
