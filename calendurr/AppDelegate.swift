@@ -7,16 +7,32 @@
 //
 
 import UIKit
+import EventKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    override init() {
+        store = EKEventStore()
+    }
 
     var window: UIWindow?
-
+    let store: EKEventStore
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        checkCalendarAuthorizationStatus()
+        
         return true
+    }
+    
+    func loadIt() {
+        let calendars = store.calendars(for: EKEntityType.event)
+        print(calendars)
+//        for cal in calendars {
+//            print("title: \(cal.title)\n\(cal)")
+//        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -39,6 +55,61 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    
+    
+    func checkCalendarAuthorizationStatus() {
+        let status = EKEventStore.authorizationStatus(for: EKEntityType.event)
+        
+        switch (status) {
+        case EKAuthorizationStatus.notDetermined:
+            // This happens on first-run
+            requestAccessToCalendar()
+        case EKAuthorizationStatus.authorized:
+            let cal = store.calendar(withIdentifier: "1CFEAAAB-91F7-4BA5-877B-FB447CE06B97")
+//            if cal == nil {
+//            }
+            let now = Date()
+            let ti = TimeInterval(60 * 60)
+
+            let example = EKEvent(eventStore: store)
+            example.location = "Conference Room - SM - Buttcheeks"
+            example.title = "Always Open"
+            example.startDate = now.addingTimeInterval(ti)
+            example.endDate = example.startDate.addingTimeInterval(ti)
+            example.calendar = cal
+
+
+            do {
+                try store.save(example, span: EKSpan.thisEvent)
+            } catch {
+                print("error creating test event: \(error)")
+            }
+
+//            self.loadIt()
+        case EKAuthorizationStatus.restricted, EKAuthorizationStatus.denied:
+            print("holy crap")
+            // We need to help them give us permission
+//            needPermissionView.fadeIn()
+        }
+    }
+    
+    func requestAccessToCalendar() {
+        self.store.requestAccess(to: EKEntityType.event, completion: {
+            (accessGranted: Bool, error: Error?) in
+            print("granted = \(accessGranted)")
+//            if accessGranted == true {
+////                DispatchQueue.main.async(execute: {
+//////                    self.loadCalendars()
+//////                    self.refreshTableView()
+////                })
+//            } else {
+////                DispatchQueue.main.async(execute: {
+//////                    self.needPermissionView.fadeIn()
+////                })
+//            }
+        })
     }
 
 
